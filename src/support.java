@@ -63,7 +63,7 @@ public static Boolean queryDelete(String table, String param){
 Boolean res=false;
 try{
     Statement stm= kon.createStatement();
-    stm.execute("update "+table+" "+param);
+    stm.execute("update "+table+" "+param+" ");
     res=true;
 }catch(SQLException ex){
 System.out.println(ex.toString());
